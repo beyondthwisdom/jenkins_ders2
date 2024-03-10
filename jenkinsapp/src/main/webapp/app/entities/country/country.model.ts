@@ -4,6 +4,7 @@ import { ILocation } from 'app/entities/location/location.model';
 export interface ICountry {
   id: number;
   countryName?: string | null;
+  counrtyAreaCode?: string | null;
   region?: IRegion | null;
   location?: ILocation | null;
 }

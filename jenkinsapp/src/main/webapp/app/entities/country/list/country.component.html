@@ -49,6 +49,13 @@
                 <fa-icon class="p-1" icon="sort"></fa-icon>
               </div>
             </th>
+            <th scope="col" jhiSortBy="counrtyAreaCode">
+              <div class="d-flex">
+                <span jhiTranslate="jenkinsappApp.country.counrtyAreaCode">Counrty Area Code</span>
+
+                <fa-icon class="p-1" icon="sort"></fa-icon>
+              </div>
+            </th>
             <th scope="col" jhiSortBy="region.id">
               <div class="d-flex">
                 <span jhiTranslate="jenkinsappApp.country.region">Region</span>
@@ -65,6 +72,7 @@
                 <a [routerLink]="['/country', country.id, 'view']">{{ country.id }}</a>
               </td>
               <td>{{ country.countryName }}</td>
+              <td>{{ country.counrtyAreaCode }}</td>
               <td>
                 @if (country.region) {
                   <div>

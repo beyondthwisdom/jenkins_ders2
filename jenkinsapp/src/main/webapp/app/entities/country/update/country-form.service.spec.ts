@@ -21,6 +21,7 @@ describe('Country Form Service', () => {
           expect.objectContaining({
             id: expect.any(Object),
             countryName: expect.any(Object),
+            counrtyAreaCode: expect.any(Object),
             region: expect.any(Object),
           }),
         );
@@ -33,6 +34,7 @@ describe('Country Form Service', () => {
           expect.objectContaining({
             id: expect.any(Object),
             countryName: expect.any(Object),
+            counrtyAreaCode: expect.any(Object),
             region: expect.any(Object),
           }),
         );

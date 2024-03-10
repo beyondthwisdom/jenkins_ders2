@@ -19,6 +19,7 @@ type CountryFormDefaults = Pick<NewCountry, 'id'>;
 type CountryFormGroupContent = {
   id: FormControl<ICountry['id'] | NewCountry['id']>;
   countryName: FormControl<ICountry['countryName']>;
+  counrtyAreaCode: FormControl<ICountry['counrtyAreaCode']>;
   region: FormControl<ICountry['region']>;
 };
 
@@ -40,6 +41,7 @@ export class CountryFormService {
         },
       ),
       countryName: new FormControl(countryRawValue.countryName),
+      counrtyAreaCode: new FormControl(countryRawValue.counrtyAreaCode),
       region: new FormControl(countryRawValue.region),
     });
   }

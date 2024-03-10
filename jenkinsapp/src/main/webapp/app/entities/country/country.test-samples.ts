@@ -1,17 +1,18 @@
 import { ICountry, NewCountry } from './country.model';
 
 export const sampleWithRequiredData: ICountry = {
-  id: 19963,
+  id: 12681,
 };
 
 export const sampleWithPartialData: ICountry = {
-  id: 21527,
-  countryName: 'credit',
+  id: 23904,
+  counrtyAreaCode: 'before',
 };
 
 export const sampleWithFullData: ICountry = {
-  id: 17997,
-  countryName: 'linguistics',
+  id: 29989,
+  countryName: 'amongst optimisation',
+  counrtyAreaCode: 'avail querulous',
 };
 
 export const sampleWithNewData: NewCountry = {
